@@ -109,3 +109,17 @@ def all_supplies_in_holidays(holiday_hash)
     end
   end
 end
+
+
+def all_holidays_with_bbq(holiday_hash)
+
+  BBQ_holidays = []
+  each.holiday_hash do |season, holidays|
+    each.holidays do |holiday, supply|
+      if supply.include? "BBQ"
+        BBQ_holidays.push(holiday)
+      end
+    end
+  end
+
+end
